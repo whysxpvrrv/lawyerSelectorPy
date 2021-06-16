@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.description{
+  color: white;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+  
+  background-color: transparent;
+  background-image: linear-gradient(90deg,rgba(31,39,50,.77) 0%,#1f2732 100%);
+  opacity: .95;
+  transition: background .3s,border-radius .3s,opacity .3s;
+  background: url("{% static 'assets/img/mazo.jpg' %}") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100% ;
+}
+
+.containerProgress{
+  margin-top: 5%;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(90deg,rgba(31,39,50,.77) 0%,#1f2732 100%);
+  opacity: .68;
+  transition: background .3s,border-radius .3s,opacity .3s;
+  text-align: center;
+}
+
+.fondo{
+  background: url("{% static 'assets/img/libros.jpg' %}") no-repeat fixed center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+   width: 100% ;
+}
+
+/*--------------------------------------------------------------
+# Progress Bar
+--------------------------------------------------------------*/
+.especialidades{
+  margin-left: 30%;
+  margin-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.progress-bar{
+  background-color: rgb(218, 180, 34) !important;
+}
+
+.lbl{
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+  color: white;
+}
+
+.containerProgress2{
+  text-align: center;
+  padding-left: 20%;
+}
+
+/*--------------------------------------------------------------
+# Info
+--------------------------------------------------------------*/
+.info2{
+margin-top: 5%;
+padding-left: 20%;
+padding-right: 20%;
+}
+
+
+.btn-contact{
+  width: 20%;
+  background: #DAB422; 
+  border:2px solid #EFD36B; 
+  border-radius: 6px;
+  color:white;
+}

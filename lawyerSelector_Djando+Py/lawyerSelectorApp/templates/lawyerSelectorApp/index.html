@@ -1,0 +1,855 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Selector Lawyer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link rel="icon" href="{% static 'assets/img/favicon.png' %}" sizes="32x32">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+  <!-- Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Vendor: Animaciones + Bootstrap -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero  ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+        </div>
+        <h1>Lawyer Selector</h1>
+        <h2>Trabajamos por tu <span class="typed" data-typed-items="libertad, seguridad"></span></h2>
+        <div class="actions">
+          <!-- Animacion Derecha -->
+          <a href="#about" data-aos="fade-right" class="btn-get-started">Dejate Asesorar</a>
+          <a href="#services" data-aos="fade-left" class="btn-services">NUESTROS SERVICIOS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo mr-auto">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Inicio">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======= About  ======= -->
+    <section id="about" data-aos="fade-right" data-aos-duration="1750">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Sobre Nosotros</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Abogados en Málaga desde 1960</p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container wow fadeInUp">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="{% static 'assets/img/about-img.jpg' %}" alt="About">
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">El éxito de nuestro despacho radica en el componente humano y en la dedicación al
+              cliente y esta labor profesional comienza desde la primera consulta.
+            </h2>
+            <p class="about-text">
+              Somos un despacho de abogados de Málaga firmemente consolidado prestando un trato directo y cercano al
+              cliente desde el año 1960 en la figura del prestigioso Don Fernando Parra Rodriguez
+            </p>
+            <p class="about-text">
+              Contamos con un equipo de profesionales con dilatada experiencia: psicólogos, mediadores, peritos
+              tasadores, médicos, arquitectos, economista, corredores de seguros y auditores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Servcicios  ======= -->
+    <section id="services" data-aos="fade-left" data-aos-duration="1750">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="subtitle">Servicios</p>
+            <h2 class="section-title">Nuestros Servicios!</h2>
+          </div>
+          <!--  Servcicio 1  -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card border-0 shadow rounded-xs pt-5">
+              <div class="card-body" data-aos="fade-right" data-aos-delay="500"> <i
+                  class="fas fa-gavel icon-lg icon-primary icon-bg-primary icon-bg-circle mb-3"></i>
+                <h4 class="mt-4 mb-3">Derecho Penal</h4>
+                <p>Nosotros te representaremos frente a Jueces, Fiscaled y Jurados Populares, no te tendrás que
+                  preocupar por nada!</p>
+              </div>
+            </div>
+          </div>
+          <!--  Servcicio 2  -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card border-0 shadow rounded-xs pt-5">
+              <div class="card-body" data-aos="fade-up" data-aos-delay="1000"> <i
+                  class="fas fa-comments-dollar icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3"></i>
+                <h4 class="mt-4 mb-3">Derecho Bancario</h4>
+                <p>¿Problemas con tu banco o mercado financiero? Nosotros te ayudamos!</p><br>
+              </div>
+            </div>
+          </div>
+          <!--  Servcicio 3  -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card border-0 shadow rounded-xs pt-5">
+              <div class="card-body" data-aos="fade-down" data-aos-delay="1500"> <i
+                  class="fas fa-baby icon-lg icon-purple icon-bg-purple icon-bg-circle mb-3"></i>
+                <h4 class="mt-4 mb-3">Derecho Familiar</h4>
+                <p>Estamos aquí para cuidar de ti, y de lo que más te importa, tu familia!</p><br>
+              </div>
+            </div>
+          </div>
+          <!--  Servcicio 4  -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card border-0 shadow rounded-xs pt-5">
+              <div class="card-body" data-aos="fade-left" data-aos-delay="2000"> <i
+                  class="fas fa-user-md icon-lg icon-cyan icon-bg-cyan icon-bg-circle mb-3"></i>
+                <h4 class="mt-4 mb-3">Negligencias Medicas</h4>
+                <p>¿ Alguna lesión debido a la ignorancia de tu medico? Nosotros te ayudamos!</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ======= Suscribete  ======= -->
+    <section id="subscribe" data-aos="fade-left" data-aos-duration="1750">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="subscribe-title">Dejate Asesorar</h3>
+            <p class="subscribe-text">Únete a nuestros más de 100 clientes y comprobarás la eficacia de nuestro
+              servcicio!</p>
+          </div>
+          <div class="col-md-4 subscribe-btn-container">
+            <a class="subscribe-btn" href="#">Dejate Asesorar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= Testimonios  ======= -->
+    <section id="testimonials" data-aos="fade-right" data-aos-duration="1750">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Testimonios</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Deja que opinen nuestros clientes por nosotros!</p>
+          </div>
+        </div>
+        <!--  Testimonio Ancho  -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="{% static 'assets/img/client-1.jpg' %}" alt=""></div>
+              <h4>Saul Goodman</h4>
+              <span>Lawless Inc</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b><img src="{% static 'assets/img/quote_sign_left.png' %}" alt=""></b>Debido a unos problemas familiares,
+              me vi involucrado en una trifulca legal, de la que salí sin complicaciones gracias a vosotros. Trato
+              excelente y profesionalidad inmejorable
+            </div>
+          </div>
+        </div>
+        <!--  Carrousel Testimonios  -->
+        <div class="container-xl" style="padding-top: 3%;">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!--  Testimonio 1  -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img src="{% static 'assets/img/team/team-3.jpg' %}" class="mr-3" alt="">
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor,
+                                varius quam luctus dui. Mauris magna metus nec.</p>
+                              <p><b>Paula Wilson</b>, Media Analyst</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Testimonio 2  -->
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img src="{% static 'assets/img/team/team-2.jpg' %}" class="mr-3" alt="">
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit
+                                tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                              <p><b>Antonio Moreno</b>, Web Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Testimonio 3  -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img src="{% static 'assets/img/team/team-3.jpg' %}" class="mr-3" alt="">
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor,
+                                varius quam luctus dui. Mauris magna metus nec.</p>
+                              <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Testimonio 4  -->
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img class="mr-3" alt="">
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit
+                                tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                              <p class="overview"><b>Mary Saveley</b>, Web Designer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Testimonio 5  -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img class="mr-3" alt="">
+
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor,
+                                varius quam luctus dui. Mauris magna metus nec.</p>
+                              <p class="overview"><b>Martin Sommer</b>, UX Analyst</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Testimonio 6  -->
+                      <div class="col-sm-6">
+                        <div class="media">
+                          <img class="mr-3" alt="">
+                          <div class="media-body">
+                            <div class="testimonial">
+                              <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit
+                                tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                              <p class="overview"><b>John Williams</b>, Web Developer</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Nuestro Equipo  ======= -->
+    <div class="row">
+      <div class="col-md-12" style="background-color: #EEEEEE; padding-top: 5%;">
+        <h3 class="section-title">Contact Us</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque</p>
+      </div>
+    </div>
+    <section id="team" class="pb-5" data-aos="fade-left" data-aos-duration="1750">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="{% static 'assets/img/team/team-1.jpg' %}" alt="card image"></p>
+                      <h4 class="card-title">Fernando Parra </h4>
+                      <p class="card-text">Licenciado en la universidad de la UMA, experto en Derecho Penal.</p>
+                      <a href="javascript:void();" class="btn btn-primary btn-sm"><i href="javascript:void();"
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Fernando Parra </h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank" href="javascript:void();">
+                            <i class="fab fa-facebook" href="javascript:void();"></i>
+
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid"
+                          src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png"
+                          alt="card image"></p>
+                      <h4 class="card-title">Edu Povea</h4>
+                      <p class="card-text">Licenciado en Harvard, experto en Negligencias Medicas.</p>
+                      <a href="javascript:void();" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Edu Povea</h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-facebook" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google" href="javascript:void();"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="{% static 'assets/img/team/team-3.jpg' %}" alt="card image"></p>
+                      <h4 class="card-title">Salvador Cintado</h4>
+                      <p class="card-text">Licenciado en la Universidad Politecnia de Cartagena, experto en Derecho
+                        Mercantil.</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Salvador Cintado</h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="{% static 'assets/img/team/team-2.jpg' %}" alt="card image"></p>
+                      <h4 class="card-title">Enriqueta Conde</h4>
+                      <p class="card-text">Licenciado en la UCAM, experta en Traumatismos Automovilisticos.</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Enriqueta Conde</h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="{% static 'assets/img/team/team-4.jpg' %}" alt="card image"></p>
+                      <h4 class="card-title">Julia Perez</h4>
+                      <p class="card-text">Licenciado en la Universidad Complutense, experto en Derecho Civil.</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Julia Perez</h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="{% static 'assets/img/team/team-1.jpg' %}" alt="card image"></p>
+                      <h4 class="card-title">Pablo Molina</h4>
+                      <p class="card-text">Licenciado en la Universidad Politecnica de Valencia, experto en Derecho
+                        Familiar.</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Pablo Molina</h4>
+                      <p class="card-text">El Derecho Penal es el conjunto de normas jurídicas por medio de las cuales
+                        el Estado define las conductas u omisiones que constituyen delitos, así como las penas y/o
+                        medidas de seguridad para sancionar a
+                        quienes incurren en la comisión de esos delitos.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fab fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- ======= Contacto ======= -->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Contactanos!</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Contactanos sin ningún tipo de compromiso, de 1 a 3 días laborales te
+              responderemos!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt" style="color: rgb(218, 180, 34);"></i>
+                <p>Avenida Sta. Rosa de Lima<br>Malaga, Bloque 3 7ºC</p>
+              </div>
+              <div>
+                <i class="bi bi-envelope" style="color: rgb(218, 180, 34);"></i>
+                <p>info@lawyerselector.com</p>
+              </div>
+              <div>
+                <i class="bi bi-phone" style="color: rgb(218, 180, 34);"></i>
+                <p>+34 953 791 071</p>
+              </div>
+            </div>
+          </div>
+          <!-- Formulario -->
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div class="form-group mt-3">
+                <div class="form-group">
+                  <label for="name">Tu Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="email">Tu Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="subject">Asunto</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <form action="/add" method='GET'>
+                  <div class="form-group mt-3">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" name="prd" id="prd" rows="5" required placeholder="Por favor, explica con suficientes detalles tu caso, o no podremos recomendarte un abogado acorde a tu caso"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" style="width: 30%; margin-top: 3%"> CONTACTAR </button>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Bienvenido!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="No, gracias"></button>
+                        </div>
+                        <div class="modal-body">
+                          <strong>Encantados de trabajar contigo!</strong> <br> <br> En un lapso de 1 a 3 días
+                          laborales,te contactará un abogado especializado en tu caso <br> <br> ¿Quieres conocer a el
+                          abogado que te contactará?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, gracias</button>
+                          <button type="submit" class="btn btn-primary">Ver perfil</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <section id="footer" style="padding-top: 60px; background-color: rgba(0, 0, 0, 0.85)">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Ayuda</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Preguntas y Respuestas</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Gremio</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Abogados Dos Santos</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Abogados Martinez</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>LI Santuario</a></li>
+            <li><a href="javascript:void();"><i class="fas fa-angle-double-right"></i>Abogados Pollo</a></li>
+            <li><a href="javascript:void()"><i class="fas fa-angle-double-right"></i>Nosotyros</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p class="h6" style="color: white;">&copy All right Reversed Fernando Parra</p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+
+  <!-- Animaciones  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+  <!-- Inicializamos Animaciones-->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
